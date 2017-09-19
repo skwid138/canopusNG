@@ -1,0 +1,24 @@
+{
+  "name": "canopus_ng2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjanaprime/canopusNG.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devjanaprime/canopusNG/issues"
+  },
+  "homepage": "https://github.com/devjanaprime/canopusNG#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4"
+  }
+}
