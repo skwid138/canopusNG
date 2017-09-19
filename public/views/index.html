@@ -8,7 +8,23 @@
     <script src="scripts/client.js"></script>
     <title>NG 2 Canopus</title>
 </head>
-<body>
-   <h1>NG 2 Canopus</h1> 
+<body ng-app="myApp">
+    <h1>NG 2 Canopus</h1>
+    <section ng-controller="ReviewController as RC">
+        <h2>Review stuff!!!</h2>
+        <input type="text" placeholder="1 band" ng-model="RC.bandIn">
+        <p>{{ RC.bandIn }}</p>
+        <button ng-click="RC.addBand()">Add Band</button>
+        <ul>
+            <li ng-repeat="band in RC.bands">
+            You like: {{band}}
+            </li>
+        </ul>
+    </section>
+    <section ng-controller="ApiController as AC">
+        <button ng-click="AC.getImages()">Search</button>
+        <input type="text" placeholder="search here" ng-model="AC.searchIn">
+        <p ng-repeat="image in AC.images">{{image.images.url}}</p>
+    </section>
 </body>
 </html>
