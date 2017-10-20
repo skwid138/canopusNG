@@ -6,4 +6,10 @@ router.get('/', function(req, res) {
     res.send(bands);
 });
 
+router.post('/', function(req, res){
+    console.log('in bands post router', req.body);
+    bands.push(req.body);
+    res.sendStatus(200); 
+});
+
 module.exports = router;
